@@ -173,7 +173,7 @@ Great for colorful or high-contrast images. Loses detail in portraits or low-con
 Adaptive dot sizing—small in detailed areas, large in flat regions—could enhance image fidelity while preserving the stylized effect.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
