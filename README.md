@@ -39,7 +39,7 @@ The interface dynamically adapts to the selected filter, showing relevant inputs
 
 ### Impressionism
 <img src="images/Berthe_Morisot.jpg" alt="Impressionist" width="400" height="300"/>
-<p> Figure: “In the Grass” by Berthe Morisot, a prominent French Impressionist painter</p>
+<p> Figure: “In the Grass” by Berthe Morisot, a prominent French Impressionist painter [1]</p>
 
 
 **Implementation:**  
@@ -60,8 +60,8 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 ---
 
 ### Watercolour Painting
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
-<p>Figure: Water Coulour Painting by Joe McQueen</p>
+<img src="images/Watercolour.jpg" alt="Watercolour" width="300" height="300"/>
+<p>Figure: Bird Water Coulour Painting by Christopher P Jones [2]</p>
 **Implementation:**  
 The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that very bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
 
@@ -82,7 +82,7 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 
 ### Charcoal Sketch
 <img src="images/charcoal.jpg" alt="Charcoal" width="300" height="300"/>
-
+<p> Figure: Charcoal Sketch by Jeff Hainez</p>
 **Implementation:**  
 The Charcoal Sketch filter recreates the aesthetic of hand-drawn charcoal artwork using a grayscale-focused approach. The image is first converted to grayscale, then inverted to emphasize the contrast between light and shadow. A Gaussian blur is applied to the inverted image to mimic the smudging effect seen in real charcoal sketches. This blurred image is then blended with the original grayscale using equal weighting, producing smooth transitions while preserving important contours. The result is converted back to a 3-channel BGR format to ensure compatibility with color-based processing pipelines. This minimalist approach effectively balances softness and structure, creating a believable charcoal rendering without explicit edge detection.
 
@@ -103,7 +103,7 @@ Adaptive blur based on detail, paper texture overlays, and content-aware enhance
 
 ### Comic Book
 <img src="images/Roy_Lichtenstein_comic_pop.jpg" alt="Comic" width="300" height="300"/>
-<p>Figure: “Drowning Girl” by Roy Lichtenstein, a prominent American Pop Art painter </p>
+<p>Figure: “Drowning Girl” by Roy Lichtenstein, a prominent American Pop Art painter [4]</p>
 
 **Implementation:**  
 The Comic Book filter emulates the bold, graphic style of classic pop art comics. It starts by simplifying the image’s color palette using KMeans clustering, reducing it to six dominant tones to mimic the flat inking style used in comic illustrations. To retain some of the original texture, the clustered image is blended with the original, giving a stylized yet detailed look.
@@ -128,7 +128,7 @@ Mean Shift clustering could improve segmentation in complex scenes, and advanced
 
 ### Oil Canvas
 <img src="images/oil_painting.jpg" alt="Oil" width="300" height="300"/>
-<p>Figure: “Woman Holding a Fruit Plate” by Raja Ravi Varma, a renowned Indian painter </p>
+<p>Figure: “Woman Holding a Fruit Plate” by Raja Ravi Varma, a renowned Indian painter [5]</p>
 **Implementation:**  
 The Oil on Canvas filter mimics the layered texture and rich tones of oil painting. It begins by normalizing the image and applying a bilateral filter per channel to smooth color gradients while preserving edges—similar to brush blending. KMeans clustering is used to extract 16 dominant colors, giving the image a stylized, painterly flatness. The original image is converted to grayscale and passed through a Sobel filter to detect edges, which are then inverted and scaled down to create a mask. This mask is used to suppress high-gradient regions in the final composition. Finally, the quantized and smoothed outputs are blended (70% smoothed, 30% quantized) and multiplied by the edge mask, producing a soft, layered effect that emulates brush buildup over textured surfaces.
 
@@ -149,7 +149,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 
 ### Word Art
 <img src="images/Wordart.png" alt="Word" width="300" height="300"/>
- <p> Figure: Word Art Self Portrait by Mariel Labrecque </p>
+ <p> Figure: Word Art Self Portrait by Mariel Labrecque [6]</p>
 
 **Implementation:**  
 The Word Art filter transforms an image into typographic artwork by replacing pixels with words whose sizes are dynamically mapped to local brightness. The input image is first validated and converted to grayscale to extract luminance. It is then resized for better performance and readability. A large white canvas is created, and the user’s input phrase is split into words. These words are sequentially drawn across the canvas, mapped to every alternate pixel. Font sizes are determined using an interpolation function, where darker pixels yield larger fonts. The result is a text-based rendering that visually represents tonal gradients using size and spacing, forming an image entirely from words.
@@ -171,7 +171,7 @@ Support for boldness simulation and smarter text wrapping would improve flexibil
 
 ### Pointillism
 <img src="images/Georges_Seurat_Sunflowers_Pointilism.jpg" alt="Pointillism" width="300" height="300"/>
-<p>Figure: “Sunflowers” in the style of Georges Seurat, a pioneering French Post-Impressionist painter</p>
+<p>Figure: “Sunflowers” in the style of Georges Seurat, a pioneering French Post-Impressionist painter [7]</p>
 **Implementation:**  
 The Pointillism filter emulates Georges Seurat’s technique of reconstructing an image through distinct colored dots. The image is first resized to 300×300 for efficiency and smoother results. KMeans clustering is applied to reduce the color space to 16 dominant tones, capturing the visual essence with a simplified palette.
 A white canvas is initialized, and then a regular grid is used to iterate over the clustered image. At each step, a small circular dot (radius 2) is stamped onto the canvas using the corresponding color from the clustered result. This builds a mosaic of tightly spaced dots that mimic brush dabs in traditional pointillism. Finally, the dotted image is resized back to the original dimensions for display.
@@ -193,7 +193,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 
 ### Andy Warhol Style
 <img src="images/Andy_Warhol.jpeg" alt="Warhol" width="300" height="300"/>
-<p>Figure: “Marilyn Diptych” by Andy Warhol, a leading figure of the American Pop Art movement</p>
+<p>Figure: “Marilyn Diptych” by Andy Warhol, a leading figure of the American Pop Art movement [8]</p>
 
 **Implementation:**  
 The Andy Warhol filter recreates the bold, high-contrast repetition and color blocking of Warhol’s pop art. KMeans clustering reduces the image to four major colors, which are then mapped to predefined pop color schemes. Four different recolored versions are generated using unique Warhol-style palettes. Each pixel is matched to its color cluster and recolored according to the selected scheme. Finally, the four recolored images are arranged in a 2x2 collage, forming a striking visual composition. This repetition of subject with varying color schemes reflects the graphic, screen-printed look Warhol was known for.
@@ -235,13 +235,15 @@ This project was completed independently. I was responsible for the entire desig
 ---
 ## Art References
 
-- Berthe Morisot – “In the Grass” - https://museums.eu/collection/object/236427/young-girl-on-the-grass-mlle-isabelle-lambert-berthe-morisot-18411895?pUnitId=5373
-- Joe McQueen – Watercolour Portraits -
-- Roy Lichtenstein – “Drowning Girl” - https://www.moma.org/audio/playlist/3/176
-- Raja Ravi Varma – “Woman Holding a Fruit Plate” - https://artsandculture.google.com/asset/madri-or-the-maharashtrian-lady-with-fruit-raja-ravi-varma/sQHU63D0VK3xpA?hl=en
-- Georges Seurat – “Sunflowers” - https://www.facebook.com/photo.php?fbid=851107430386079&id=100064604895753&set=a.542901797873312
-- Andy Warhol – “Marilyn Diptych” - https://www.mutualart.com/Artwork/Marilyn-Monroe/87E25A09F4753D4DCE943BD73945BAB2
-- Mariel Labrecque - Self Portrait Word Art - https://laconteconsulting.com/2018/10/19/what-i-learned-from-word-art/
+1] Berthe Morisot – “In the Grass” - https://museums.eu/collection/object/236427/young-girl-on-the-grass-mlle-isabelle-lambert-berthe-morisot-18411895?pUnitId=5373
+2] Christopher P Jones - Bird Watercolour Painting-  https://christopherpjones.medium.com/bird-watercolor-painting-tutorial-81df32c1338
+3]Jeff Haines- Charcoal Sketch - https://in.pinterest.com/pin/792352128200074573/
+4] Roy Lichtenstein – “Drowning Girl” - https://www.moma.org/audio/playlist/3/176
+5] Raja Ravi Varma – “Woman Holding a Fruit Plate” - https://artsandculture.google.com/asset/madri-or-the-maharashtrian-lady-with-fruit-raja-ravi-varma/sQHU63D0VK3xpA?hl=en
+6] Mariel Labrecque - Self Portrait Word Art - https://laconteconsulting.com/2018/10/19/what-i-learned-from-word-art/
+7] Georges Seurat – “Sunflowers” - https://www.facebook.com/photo.php?fbid=851107430386079&id=100064604895753&set=a.542901797873312
+8] Andy Warhol – “Marilyn Diptych” - https://www.mutualart.com/Artwork/Marilyn-Monroe/87E25A09F4753D4DCE943BD73945BAB2
+
 
 Used under public domain or for academic reference only.
 
