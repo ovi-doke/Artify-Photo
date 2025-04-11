@@ -56,7 +56,7 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 ---
 
 ### Watercolour Painting
-![Watercolour](images/Andy_Warhol.jpeg)
+![Watercolour](images/Watercolour_Joe_McQueen.jpg)
 **Implementation:**  
 The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that very bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
 
