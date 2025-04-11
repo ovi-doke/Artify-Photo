@@ -56,7 +56,7 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 ---
 
 ### Watercolour Painting
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="400" height="300"/>
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 **Implementation:**  
 The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that very bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
@@ -73,7 +73,7 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 ---
 
 ### Charcoal Sketch
-<img src="images/charcoal.jpg" alt="Charcoal" width="400" height="300"/>
+<img src="images/charcoal.jpg" alt="Charcoal" width="300" height="300"/>
 
 **Implementation:**  
 The Charcoal Sketch filter recreates the aesthetic of hand-drawn charcoal artwork using a grayscale-focused approach. The image is first converted to grayscale, then inverted to emphasize the contrast between light and shadow. A Gaussian blur is applied to the inverted image to mimic the smudging effect seen in real charcoal sketches. This blurred image is then blended with the original grayscale using equal weighting, producing smooth transitions while preserving important contours. The result is converted back to a 3-channel BGR format to ensure compatibility with color-based processing pipelines. This minimalist approach effectively balances softness and structure, creating a believable charcoal rendering without explicit edge detection.
@@ -90,7 +90,7 @@ Adaptive blur based on detail, paper texture overlays, and content-aware enhance
 ---
 
 ### Comic Book
-<img src="images/Roy_Lichtenstein_comic_pop.jpg" alt="Comic" width="400" height="300"/>
+<img src="images/Roy_Lichtenstein_comic_pop.jpg" alt="Comic" width="300" height="300"/>
 
 **Implementation:**  
 The Impressionism filter captures the loose, textured feel of impressionist paintings by layering randomized brush strokes over a simplified color base. The image is resized to 300×300 for performance efficiency, and KMeans clustering reduces the color palette to 16 dominant tones, imitating the restricted color choices typical in impressionist artwork. A soft Gaussian blur of the original image is used as the background to preserve structure. Then, simulated strokes are drawn using the quantized colors, with each line given a randomized angle and position jitter to evoke the expressive, human quality of hand-painted art. These strokes vary in direction and overlap, building a layered, painterly texture that preserves the image’s overall form while abstracting fine detail.
@@ -107,7 +107,7 @@ Mean Shift clustering could improve segmentation in complex scenes, and advanced
 ---
 
 ### Oil Canvas
-<img src="images/oil_painting.jpg" alt="Oil" width="400" height="300"/>
+<img src="images/oil_painting.jpg" alt="Oil" width="300" height="300"/>
 
 **Implementation:**  
 The Oil on Canvas filter mimics the layered texture and rich tones of oil painting. It begins by normalizing the image and applying a bilateral filter per channel to smooth color gradients while preserving edges—similar to brush blending. KMeans clustering is used to extract 16 dominant colors, giving the image a stylized, painterly flatness. The original image is converted to grayscale and passed through a Sobel filter to detect edges, which are then inverted and scaled down to create a mask. This mask is used to suppress high-gradient regions in the final composition. Finally, the quantized and smoothed outputs are blended (70% smoothed, 30% quantized) and multiplied by the edge mask, producing a soft, layered effect that emulates brush buildup over textured surfaces.
@@ -124,7 +124,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 ---
 
 ### Word Art
-<img src="images/word_art.jpg" alt="Word" width="400" height="300"/>
+<img src="images/word_art.jpg" alt="Word" width="300" height="300"/>
 
 
 **Implementation:**  
@@ -142,7 +142,7 @@ Support for boldness simulation and smarter text wrapping would improve flexibil
 ---
 
 ### Pointillism
-<img src="images/Georges_Seurat_Sunflowers_Pointilism.jpg" alt="Pointillism" width="400" height="300"/>
+<img src="images/Georges_Seurat_Sunflowers_Pointilism.jpg" alt="Pointillism" width="300" height="300"/>
 
 **Implementation:**  
 The Comic Book filter combines bold lines, flat colors, and halftone texture to emulate classic comic illustrations. First, KMeans clustering reduces the color complexity to six key tones, and this simplified version is blended with the original image to retain texture. Canny edge detection identifies prominent contours, which are inverted and overlaid on the blended image to simulate comic ink outlines. To add a print-like texture, a halftone layer is generated: the image is scanned in a grid, and circular dots are drawn at regular intervals with sizes based on pixel brightness. These black dots are softly blended over the image, contributing to the overall comic style without overwhelming the content.
@@ -159,7 +159,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 ---
 
 ### Andy Warhol Style
-<img src="images/Andy_Warhol.jpeg" alt="Warhol" width="400" height="300"/>
+<img src="images/Andy_Warhol.jpeg" alt="Warhol" width="300" height="300"/>
 
 
 **Implementation:**  
