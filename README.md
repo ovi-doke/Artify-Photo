@@ -88,7 +88,7 @@ Adaptive blur based on detail, paper texture overlays, and content-aware enhance
 ---
 
 ### Comic Book
-![Comic](images/Andy_Warhol.jpeg)
+![Comic](images/Roy_Lichtenstein_comic_pop.jpg)
 **Implementation:**  
 The Impressionism filter captures the loose, textured feel of impressionist paintings by layering randomized brush strokes over a simplified color base. The image is resized to 300×300 for performance efficiency, and KMeans clustering reduces the color palette to 16 dominant tones, imitating the restricted color choices typical in impressionist artwork. A soft Gaussian blur of the original image is used as the background to preserve structure. Then, simulated strokes are drawn using the quantized colors, with each line given a randomized angle and position jitter to evoke the expressive, human quality of hand-painted art. These strokes vary in direction and overlap, building a layered, painterly texture that preserves the image’s overall form while abstracting fine detail.
 
