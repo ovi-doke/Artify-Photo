@@ -136,7 +136,7 @@ Support for boldness simulation and smarter text wrapping would improve flexibil
 ---
 
 ### Pointillism
-![Pointillism](images/Andy_Warhol.jpeg)
+![Pointillism](images/Georges_Seurat_Sunflowers_Pointilism.jpg)
 **Implementation:**  
 The Comic Book filter combines bold lines, flat colors, and halftone texture to emulate classic comic illustrations. First, KMeans clustering reduces the color complexity to six key tones, and this simplified version is blended with the original image to retain texture. Canny edge detection identifies prominent contours, which are inverted and overlaid on the blended image to simulate comic ink outlines. To add a print-like texture, a halftone layer is generated: the image is scanned in a grid, and circular dots are drawn at regular intervals with sizes based on pixel brightness. These black dots are softly blended over the image, contributing to the overall comic style without overwhelming the content.
 
