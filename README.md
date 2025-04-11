@@ -116,7 +116,7 @@ Mean Shift clustering could improve segmentation in complex scenes, and advanced
 
 
 <img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Solo_Comic.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
