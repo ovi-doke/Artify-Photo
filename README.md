@@ -178,7 +178,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 ---
 
 ### Andy Warhol Style
-<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Warhol" width="300" height="300"/>
+<img src="images/Andy_Warhol.jpeg" alt="Warhol" width="300" height="300"/>
 
 
 **Implementation:**  
