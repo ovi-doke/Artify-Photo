@@ -53,7 +53,7 @@ The Impressionism filter captures the loose, textured feel of impressionist pain
 Initial attempts used a white canvas, which introduced patchy gaps. Switching to a blurred base image added visual continuity. Parameters like stroke spacing, angle, and blending ratio were adjusted to achieve a balance between abstraction and recognizability.
 
 **Evaluation:**  
-It excels with portraits and landscapes but underperforms in crowded or distant photos where finer details get lost.
+It excels with landscapes but underperforms in portraits, crowded or distant photos where finer details get lost.
 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance the filter. These additions would mimic traditional brushwork better.
