@@ -66,7 +66,7 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 
 ### Watercolour Painting
 <img src="images/Watercolour.jpg" alt="Watercolour" width="300" height="300"/>
-<p>Figure: Bird Water Coulour Painting by Christopher P Jones [2]</p>
+<p>Figure: Bird Water Color Painting by Christopher P Jones [2]</p>
 
 **Implementation:**  
 
