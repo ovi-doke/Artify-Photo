@@ -112,7 +112,7 @@ Ideal for well-lit, cleanly composed portraits. Less effective for low-contrast 
 Mean Shift clustering could improve segmentation in complex scenes, and advanced edge detectors may offer better consistency across varied lighting.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
@@ -194,6 +194,6 @@ Performs best on single-subject portraits or objects with plain backgrounds. Str
 Preprocessing to isolate subjects could improve performance on complex backgrounds. More color map variety or dynamic palette selection could expand creative range.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
