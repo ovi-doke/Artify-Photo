@@ -52,7 +52,7 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
