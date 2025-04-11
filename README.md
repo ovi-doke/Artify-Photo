@@ -39,6 +39,8 @@ The interface dynamically adapts to the selected filter, showing relevant inputs
 
 ### Impressionism
 <img src="images/Berthe_Morisot.jpg" alt="Impressionist" width="400" height="300"/>
+**Figure**: “In the Grass” by Berthe Morisot, a prominent French Impressionist painter
+
 
 **Implementation:**  
 The Impressionism filter captures the loose, textured feel of impressionist paintings by layering randomized brush strokes over a simplified color base. The image is resized to 300×300 for performance efficiency, and KMeans clustering reduces the color palette to 16 dominant tones, imitating the restricted color choices typical in impressionist artwork. A soft Gaussian blur of the original image is used as the background to preserve structure. Then, simulated strokes are drawn using the quantized colors, with each line given a randomized angle and position jitter to evoke the expressive, human quality of hand-painted art. These strokes vary in direction and overlap, building a layered, painterly texture that preserves the image’s overall form while abstracting fine detail.
