@@ -86,6 +86,7 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 ### Charcoal Sketch
 <img src="images/charcoal.jpg" alt="Charcoal" width="300" height="300"/>
 <p> Figure: Charcoal Sketch by Jeff Hainez</p>
+
 **Implementation:**  
 The Charcoal Sketch filter recreates the aesthetic of hand-drawn charcoal artwork using a grayscale-focused approach. The image is first converted to grayscale, then inverted to emphasize the contrast between light and shadow. A Gaussian blur is applied to the inverted image to mimic the smudging effect seen in real charcoal sketches. This blurred image is then blended with the original grayscale using equal weighting, producing smooth transitions while preserving important contours. The result is converted back to a 3-channel BGR format to ensure compatibility with color-based processing pipelines. This minimalist approach effectively balances softness and structure, creating a believable charcoal rendering without explicit edge detection.
 
