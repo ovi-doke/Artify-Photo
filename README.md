@@ -49,11 +49,12 @@ The Impressionism filter captures the loose, textured feel of impressionist pain
 Initial attempts used a white canvas, which introduced patchy gaps. Switching to a blurred base image added visual continuity. Parameters like stroke spacing, angle, and blending ratio were adjusted to achieve a balance between abstraction and recognizability.
 
 **Evaluation:**  
-It excels with portraits and landscapes but underperforms in crowded or distant group photos where finer details get lost.
+It excels with portraits and landscapes but underperforms in crowded or distant photos where finer details get lost.
 
 **Future Improvements:**  
-Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
+Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance the filter. These additions would mimic traditional brushwork better.
 
+**Results:** 
 <img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 <img src="images/Nature_Impressionism.png" alt="Watercolour" width="1200" height="600"/>
 
@@ -62,8 +63,10 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 ### Watercolour Painting
 <img src="images/Watercolour.jpg" alt="Watercolour" width="300" height="300"/>
 <p>Figure: Bird Water Coulour Painting by Christopher P Jones [2]</p>
+
 **Implementation:**  
-The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that very bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
+
+The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
 
 **Development Iterations:**  
 Initially, the lack of edges made images appear overly blurry. Adding Canny edge detection brought structure back. Brightness masking preserved highlights and avoided flattening. Fine-tuning of bilateral strength, thresholds, and color tone yielded a soft but expressive look.
@@ -74,7 +77,7 @@ Strong lighting and clear edges give the best results. Low-contrast or underexpo
 **Future Improvements:**  
 Adaptive thresholding for highlight masking, watercolor-bleed textures, and region-specific saturation control could yield better results.
 
-
+**Results:** 
 <img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="1200" height="600"/>
 <img src="images/Tiger_Watercolour.png" alt="Watercolour" width="1200" height="600"/>
 
