@@ -1,5 +1,6 @@
 # DoVs-Project
 # 🎨 Interactive Photo Artifying App
+# Ovi Doke
 
 ## Project Overview
 This project is an interactive image transformation tool developed entirely in **Google Colab** using **ipywidgets**, **OpenCV**, and **scikit-learn**. It enables users to apply eight artistic filters to any image, transforming them into stylized artworks.
