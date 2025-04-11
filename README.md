@@ -202,6 +202,6 @@ Preprocessing to isolate subjects could improve performance on complex backgroun
 
 
 <img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Fruiy_Warhol.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
