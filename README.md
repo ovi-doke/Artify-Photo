@@ -51,7 +51,6 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
-![Impressionism](images/Andy_Warhol.jpeg)
 
 ---
 
@@ -152,6 +151,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 ---
 
 ### Andy Warhol Style
+![Warhol](images/Andy_Warhol.jpeg)
 
 **Implementation:**  
 The Andy Warhol filter recreates the bold, high-contrast repetition and color blocking of Warhol’s pop art. KMeans clustering reduces the image to four major colors, which are then mapped to predefined pop color schemes. Four different recolored versions are generated using unique Warhol-style palettes. Each pixel is matched to its color cluster and recolored according to the selected scheme. Finally, the four recolored images are arranged in a 2x2 collage, forming a striking visual composition. This repetition of subject with varying color schemes reflects the graphic, screen-printed look Warhol was known for.
@@ -164,5 +164,6 @@ Performs best on single-subject portraits or objects with plain backgrounds. Str
 
 **Future Improvements:**  
 Preprocessing to isolate subjects could improve performance on complex backgrounds. More color map variety or dynamic palette selection could expand creative range.
+
 
 ---
