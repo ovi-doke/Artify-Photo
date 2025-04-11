@@ -57,6 +57,7 @@ Incorporating adaptive stroke thickness, variable stroke length based on texture
 
 ### Watercolour Painting
 ![Watercolour](images/Watercolour_Joe_McQueen.jpg)
+
 **Implementation:**  
 The Watercolour filter simulates the soft blending and delicate transitions characteristic of watercolor paintings. It begins with a bilateral filter that smooths regions while maintaining edge integrity, creating a base that mimics pigment diffusion on paper. Next, edges are extracted from a grayscale version of the smoothed image using Canny edge detection, slightly thickened via dilation, and then inverted to blend softly with the base layer. This edge blend preserves structure without introducing harsh outlines. To protect natural highlights, a luminance mask is generated from the blended result, ensuring that very bright areas are not dulled during tone adjustments. The final steps involve warming the color tone slightly and applying desaturation in the HSV color space, which collectively give the image its pastel, paper-washed appearance.
 
@@ -72,7 +73,8 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 ---
 
 ### Charcoal Sketch
-![Charcoal](images/Andy_Warhol.jpeg)
+![Charcoal](images/charcoal.jpg)
+
 **Implementation:**  
 The Charcoal Sketch filter recreates the aesthetic of hand-drawn charcoal artwork using a grayscale-focused approach. The image is first converted to grayscale, then inverted to emphasize the contrast between light and shadow. A Gaussian blur is applied to the inverted image to mimic the smudging effect seen in real charcoal sketches. This blurred image is then blended with the original grayscale using equal weighting, producing smooth transitions while preserving important contours. The result is converted back to a 3-channel BGR format to ensure compatibility with color-based processing pipelines. This minimalist approach effectively balances softness and structure, creating a believable charcoal rendering without explicit edge detection.
 
