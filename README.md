@@ -53,6 +53,7 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
 <img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -73,6 +74,7 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 
 
 <img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -93,6 +95,7 @@ Adaptive blur based on detail, paper texture overlays, and content-aware enhance
 
 
 <img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -113,6 +116,7 @@ Mean Shift clustering could improve segmentation in complex scenes, and advanced
 
 
 <img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -133,6 +137,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 
 
 <img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -154,6 +159,7 @@ Support for boldness simulation and smarter text wrapping would improve flexibil
 
 
 <img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -174,6 +180,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 
 
 <img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -195,5 +202,6 @@ Preprocessing to isolate subjects could improve performance on complex backgroun
 
 
 <img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
