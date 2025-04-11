@@ -20,7 +20,7 @@ Please Click on the link to interact with the app. [Open in Google Colab](https:
 Users can either upload their own images or select from built-in examples. The platform is optimized for real-time use, with an intuitive UI. It requires no installation beyond fetching default assets via `gdown`, making it highly portable and user-friendly.
 
 The interface dynamically adapts to the selected filter, showing relevant inputs only when needed (e.g., the text box appears only for word input in Word Art Filter). It also includes real-time feedback labels to inform users when processing is underway, helping prevent accidental interruptions. Once a filter is applied, the original and stylized images are displayed side-by-side for comparison. A dedicated download button lets users save their results instantly.
-<img src="images/UI.png" alt="Impressionist" />
+<img src="images/UI.png" alt="App_UI" />
 <p>Figure: Snapshot of the User Interface</p>
 
 ---
@@ -41,7 +41,7 @@ The interface dynamically adapts to the selected filter, showing relevant inputs
 ##  Filter Reports
 
 ### Impressionism
-<img src="images/Berthe_Morisot.jpg" alt="Impressionist" width="400" height="300"/>
+<img src="images/Berthe_Morisot.jpg" alt="Impressionism" width="400" height="300"/>
 <p> Figure: “In the Grass” by Berthe Morisot, a prominent French Impressionist painter [1]</p>
 
 
@@ -58,8 +58,8 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance the filter. These additions would mimic traditional brushwork better.
 
 **Results:** 
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Nature_Impressionism.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Impressionism" width="1200" height="600"/>
+<img src="images/Nature_Impressionism.png" alt="Impressionism" width="1200" height="600"/>
 
 ---
 
@@ -103,8 +103,8 @@ Works well on portraits with strong contrast. Cluttered images without any objec
 Adaptive blur based on detail, paper texture overlays, and content-aware enhancement (portrait vs. scenery) could improve balance and realism.
 
 
-<img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Group_Charcoal.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Charcoal" width="1200" height="600"/>
+<img src="images/Group_Charcoal.png" alt="Charcoal" width="1200" height="600"/>
 
 ---
 
@@ -128,8 +128,8 @@ Ideal for well-lit, cleanly composed portraits. Less effective for low-contrast 
 Mean Shift clustering could improve segmentation in complex scenes, and advanced edge detectors may offer better consistency across varied lighting.
 
 
-<img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Solo_Comic.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Pop.jpg" alt="Comic" width="1200" height="600"/>
+<img src="images/Solo_Comic.png" alt="Comic" width="1200" height="600"/>
 
 ---
 
@@ -150,20 +150,20 @@ Performs best on portraits or compositions with strong lighting and color contra
 Edge-aware smoothing and region-adaptive clustering could retain more detail in complex zones. Adding brush textures would also enhance authenticity.
 
 
-<img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Group_oil.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Oil" width="1200" height="600"/>
+<img src="images/Group_oil.png" alt="Oil" width="1200" height="600"/>
 
 ---
 
 ### Word Art
-<img src="images/Wordart.png" alt="Word" width="300" height="300"/>
+<img src="images/Wordart.png" alt="WordArt" width="300" height="300"/>
  <p> Figure: Word Art Self Portrait by Mariel Labrecque [6]</p>
 
 **Implementation:**  
 The Word Art filter transforms an image into typographic artwork by replacing pixels with words whose sizes are dynamically mapped to local brightness. The input image is first validated and converted to grayscale to extract luminance. It is then resized for better performance. A large white canvas is created, and the user’s input phrase is split into words. These words are sequentially drawn across the canvas, mapped to every alternate pixel. Font sizes are determined using an interpolation function, where darker pixels yield larger fonts. The result is a text-based rendering that visually represents tonal gradients using size and spacing, forming an image entirely from words.
 
 **Development Iterations:**  
-Early versions used random numbers generated instead of words. Switching to words and phrases improved narrative and personaled the result. Font size scaling and spacing were refined to maintain balance. 
+Early versions used random numbers generated instead of words. Switching to words and phrases improved narrative and personalised the result. Font size scaling and spacing were refined to maintain balance. 
 
 **Evaluation:**  
 Performs well on portraits or icons with strong shapes. Struggles on busy or low-contrast scenes. Long phrases lead to layout clutter and repetition artifacts.
@@ -172,8 +172,8 @@ Performs well on portraits or icons with strong shapes. Struggles on busy or low
 Support for boldness simulation (i.e varying text weight according to the brightness) and smarter text wrapping would improve flexibility. Limiting phrase length or auto-summarizing content could help maintain clarity in visually dense regions.
 
 
-<img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/gorup_word.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_WordArt.jpg" alt="WordArt" width="1200" height="600"/>
+<img src="images/gorup_word.png" alt="WordArt" width="1200" height="600"/>
 
 ---
 
@@ -195,8 +195,8 @@ Great for colorful or high-contrast images. Loses detail in portraits or low-con
 Adaptive dot sizing—small in detailed areas, large in flat regions—could enhance image fidelity while preserving the stylized effect.
 
 
-<img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/nature_pointillism.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Pointillism" width="1200" height="600"/>
+<img src="images/nature_pointillism.png" alt="Pointillism" width="1200" height="600"/>
 
 ---
 
@@ -217,8 +217,8 @@ Performs best on single-subject portraits or objects with plain backgrounds. Str
 Preprocessing to isolate subjects could improve performance on complex backgrounds. More color map variety or dynamic palette selection could expand creative range.
 
 
-<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Fruiy_Warhol.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Warhol" width="1200" height="600"/>
+<img src="images/Fruiy_Warhol.png" alt="Warhol" width="1200" height="600"/>
 
 ---
 ## Personal Contribution & Reflection
@@ -233,7 +233,7 @@ This project was completed independently. I was responsible for the entire desig
 
 - **UI/UX in Notebooks:** I explored how to design an interactive and responsive interface using `ipywidgets` within a Colab environment. I learned how to manage widget state, prevent user interruption during processing, and deliver a smooth user experience — even without a web frontend. Although there is a scope to optimise this code further.
 
-- **Optimizing for Performance in Visual Pipelines:** Performance bottlenecks taught me how to simplify data (e.g., resizing before KMeans), avoid redundant conversions, and tune clustering/edge-detection parameters. I also explored the trade-off between processing time (using kMeans over Mean Shift clusterin) and visual quality.
+- **Optimizing for Performance in Visual Pipelines:** Performance bottlenecks taught me how to simplify data (e.g., resizing before KMeans), avoid redundant conversions, and tune clustering/edge-detection parameters. I also explored the trade-off between processing time (using kMeans over Mean Shift clustering) and visual quality.
 
 - **Creative Debugging & Visual Testing:** I developed a visual debugging habit — assessing filters not just by code output, but by their *aesthetic effect*. This was especially important for creative filters where traditional accuracy isn't the goal.
 
@@ -244,14 +244,14 @@ This project was completed independently. I was responsible for the entire desig
 ---
 ## Art References
 
-1] Berthe Morisot – “In the Grass” - https://museums.eu/collection/object/236427/young-girl-on-the-grass-mlle-isabelle-lambert-berthe-morisot-18411895?pUnitId=5373
-2] Christopher P Jones - Bird Watercolour Painting-  https://christopherpjones.medium.com/bird-watercolor-painting-tutorial-81df32c1338
-3]Jeff Haines- Charcoal Sketch - https://in.pinterest.com/pin/792352128200074573/
-4] Roy Lichtenstein – “Drowning Girl” - https://www.moma.org/audio/playlist/3/176
-5] Raja Ravi Varma – “Woman Holding a Fruit Plate” - https://artsandculture.google.com/asset/madri-or-the-maharashtrian-lady-with-fruit-raja-ravi-varma/sQHU63D0VK3xpA?hl=en
-6] Mariel Labrecque - Self Portrait Word Art - https://laconteconsulting.com/2018/10/19/what-i-learned-from-word-art/
-7] Georges Seurat – “Sunflowers” - https://www.facebook.com/photo.php?fbid=851107430386079&id=100064604895753&set=a.542901797873312
-8] Andy Warhol – “Marilyn Diptych” - https://www.mutualart.com/Artwork/Marilyn-Monroe/87E25A09F4753D4DCE943BD73945BAB2
+- 1] Berthe Morisot – “In the Grass” - https://museums.eu/collection/object/236427/young-girl-on-the-grass-mlle-isabelle-lambert-berthe-morisot-18411895?pUnitId=5373
+- 2] Christopher P Jones - Bird Watercolour Painting-  https://christopherpjones.medium.com/bird-watercolor-painting-tutorial-81df32c1338
+- 3]Jeff Haines- Charcoal Sketch - https://in.pinterest.com/pin/792352128200074573/
+- 4] Roy Lichtenstein – “Drowning Girl” - https://www.moma.org/audio/playlist/3/176
+- 5] Raja Ravi Varma – “Woman Holding a Fruit Plate” - https://artsandculture.google.com/asset/madri-or-the-maharashtrian-lady-with-fruit-raja-ravi-varma/sQHU63D0VK3xpA?hl=en
+- 6] Mariel Labrecque - Self Portrait Word Art - https://laconteconsulting.com/2018/10/19/what-i-learned-from-word-art/
+- 7] Georges Seurat – “Sunflowers” - https://www.facebook.com/photo.php?fbid=851107430386079&id=100064604895753&set=a.542901797873312
+- 8] Andy Warhol – “Marilyn Diptych” - https://www.mutualart.com/Artwork/Marilyn-Monroe/87E25A09F4753D4DCE943BD73945BAB2
 
 
 
