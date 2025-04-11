@@ -95,7 +95,7 @@ Adaptive blur based on detail, paper texture overlays, and content-aware enhance
 
 
 <img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Group_Charcoal.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -137,7 +137,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 
 
 <img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Group_oil.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
