@@ -19,7 +19,9 @@ Please Click on the link to interact with the app. [Open in Google Colab](https:
 Users can either upload their own images or select from built-in examples. The platform is optimized for real-time use, with an intuitive UI. It requires no installation beyond fetching default assets via `gdown`, making it highly portable and user-friendly.
 
 The interface dynamically adapts to the selected filter, showing relevant inputs only when needed (e.g., the text box appears only for Word Art). It also includes real-time feedback labels to inform users when processing is underway, helping prevent accidental interruptions. Once a filter is applied, the original and stylized images are displayed side-by-side for comparison. A dedicated download button lets users save their results instantly.
-<img src="images/Berthe_Morisot.jpg" alt="Impressionist" width="400" height="300"/>
+<img src="images/UI.png" alt="Impressionist" />
+<p>Figure: Snapshot of the User Interface</p>
+
 ---
 
 ## How to Run
