@@ -180,7 +180,7 @@ Adaptive dot sizing—small in detailed areas, large in flat regions—could enh
 
 
 <img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/nature_pointillism.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
