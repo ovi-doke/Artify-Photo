@@ -106,7 +106,7 @@ Mean Shift clustering could improve segmentation in complex scenes, and advanced
 ---
 
 ### Oil Canvas
-![Oil](images/Andy_Warhol.jpeg)
+![Oil](images/oil_painting.jpg)
 **Implementation:**  
 The Oil on Canvas filter mimics the layered texture and rich tones of oil painting. It begins by normalizing the image and applying a bilateral filter per channel to smooth color gradients while preserving edges—similar to brush blending. KMeans clustering is used to extract 16 dominant colors, giving the image a stylized, painterly flatness. The original image is converted to grayscale and passed through a Sobel filter to detect edges, which are then inverted and scaled down to create a mask. This mask is used to suppress high-gradient regions in the final composition. Finally, the quantized and smoothed outputs are blended (70% smoothed, 30% quantized) and multiplied by the edge mask, producing a soft, layered effect that emulates brush buildup over textured surfaces.
 
