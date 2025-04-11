@@ -51,6 +51,8 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
+![Impressionism](images/Andy Warhol.jpeg)
+
 ---
 
 ### Watercolour Painting
