@@ -27,12 +27,13 @@ The interface dynamically adapts to the selected filter, showing relevant inputs
 
 ## How to Run
 1. [Open in Google Colab](https://colab.research.google.com/drive/1E4MsvuOEOJmaKKoxYC5D_HYIRnglTGbb?usp=sharing).
-2. Run all cells (**Runtime > Run all**).
-3. Choose an image (upload or default).
-4. Select a filter from the dropdown.
-5. For **Word Art**, type a word/phrase in the input field.
-6. Click **“Run Filter”** to apply the effect.
-7. Download the result using the provided button.
+2. Log in with your Google Account.
+3. Run all cells (**Runtime > Run all**).
+4. Choose an image (upload or default).
+5. Select a filter from the dropdown.
+6. For **Word Art**, type a word/phrase in the input field.
+7. Click **“Run Filter”** to apply the effect.
+8. Download the result using the provided button.
 
 **Note**: The **Word Art** filter takes 2–3 minutes. Avoid interacting with the UI during processing.
 
