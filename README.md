@@ -52,7 +52,7 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -72,7 +72,7 @@ Strong lighting and clear edges give the best results. Low-contrast or underexpo
 Adaptive thresholding for highlight masking, watercolor-bleed textures, and region-specific saturation control could yield better results.
 
 
-<img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="600" height="300"/>
 
 ---
 
@@ -153,7 +153,7 @@ Performs well on portraits or icons with strong shapes. Struggles on busy or low
 Support for boldness simulation and smarter text wrapping would improve flexibility. Limiting phrase length or auto-summarizing content could help maintain clarity in dense regions.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
