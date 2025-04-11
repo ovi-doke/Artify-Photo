@@ -74,7 +74,7 @@ Adaptive thresholding for highlight masking, watercolor-bleed textures, and regi
 
 
 <img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/Marilyn_Monroe_Impressionism.jpg" alt="Watercolour" width="1200" height="600"/>
+<img src="images/Tiger_Watercolour.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
