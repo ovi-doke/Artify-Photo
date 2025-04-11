@@ -92,7 +92,7 @@ Works well on close-up portraits with strong contrast. Cluttered or dark backgro
 Adaptive blur based on detail, paper texture overlays, and content-aware enhancement (portrait vs. scenery) could improve balance and realism.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
