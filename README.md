@@ -132,7 +132,7 @@ Performs best on portraits or compositions with strong lighting and color contra
 Edge-aware smoothing and region-adaptive clustering could retain more detail in complex zones. Adding brush textures would also enhance authenticity.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
