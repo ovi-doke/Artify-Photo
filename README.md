@@ -159,7 +159,7 @@ Support for boldness simulation and smarter text wrapping would improve flexibil
 
 
 <img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="1200" height="600"/>
-<img src="images/images/gorup_word.png" alt="Watercolour" width="1200" height="600"/>
+<img src="images/gorup_word.png" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
