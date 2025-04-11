@@ -72,7 +72,7 @@ Strong lighting and clear edges give the best results. Low-contrast or underexpo
 Adaptive thresholding for highlight masking, watercolor-bleed textures, and region-specific saturation control could yield better results.
 
 
-<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
