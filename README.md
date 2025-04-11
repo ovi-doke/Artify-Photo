@@ -52,6 +52,7 @@ It excels with portraits and landscapes but underperforms in crowded or distant 
 **Future Improvements:**  
 Incorporating adaptive stroke thickness, variable stroke length based on texture, and gradient-based orientation could enhance realism. These additions would mimic traditional brushwork more faithfully.
 
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
@@ -70,6 +71,9 @@ Strong lighting and clear edges give the best results. Low-contrast or underexpo
 **Future Improvements:**  
 Adaptive thresholding for highlight masking, watercolor-bleed textures, and region-specific saturation control could yield better results.
 
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+
 ---
 
 ### Charcoal Sketch
@@ -86,6 +90,9 @@ Works well on close-up portraits with strong contrast. Cluttered or dark backgro
 
 **Future Improvements:**  
 Adaptive blur based on detail, paper texture overlays, and content-aware enhancement (portrait vs. scenery) could improve balance and realism.
+
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
@@ -104,6 +111,9 @@ Ideal for well-lit, cleanly composed portraits. Less effective for low-contrast 
 **Future Improvements:**  
 Mean Shift clustering could improve segmentation in complex scenes, and advanced edge detectors may offer better consistency across varied lighting.
 
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+
 ---
 
 ### Oil Canvas
@@ -120,6 +130,9 @@ Performs best on portraits or compositions with strong lighting and color contra
 
 **Future Improvements:**  
 Edge-aware smoothing and region-adaptive clustering could retain more detail in complex zones. Adding brush textures would also enhance authenticity.
+
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
@@ -139,6 +152,9 @@ Performs well on portraits or icons with strong shapes. Struggles on busy or low
 **Future Improvements:**  
 Support for boldness simulation and smarter text wrapping would improve flexibility. Limiting phrase length or auto-summarizing content could help maintain clarity in dense regions.
 
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
+
 ---
 
 ### Pointillism
@@ -155,6 +171,9 @@ Great for colorful or high-contrast images. Loses detail in portraits or low-con
 
 **Future Improvements:**  
 Adaptive dot sizing—small in detailed areas, large in flat regions—could enhance image fidelity while preserving the stylized effect.
+
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
 
@@ -174,5 +193,7 @@ Performs best on single-subject portraits or objects with plain backgrounds. Str
 **Future Improvements:**  
 Preprocessing to isolate subjects could improve performance on complex backgrounds. More color map variety or dynamic palette selection could expand creative range.
 
+
+<img src="images/Watercolour_Joe_McQueen.jpg" alt="Watercolour" width="300" height="300"/>
 
 ---
