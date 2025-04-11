@@ -97,7 +97,7 @@ The Charcoal Sketch filter recreates the hand-drawn charcoal artwork. The image 
 Earlier versions used dodge blending and Laplacian subtraction, but this caused white halos—especially around subjects with black backgrounds (e.g., Marilyn Monroe). Replacing that with grayscale inversion and Gaussian blending resolved the artifact issue.
 
 **Evaluation:**  
-Works well on portraits with strong contrast. Cluttered images without any object in focus (like Scenary) can produce some faint parts that could reduce clarity.
+Works well on portraits with strong contrast. Cluttered images without any object in focus (like Scenery) can produce some faint parts that could reduce clarity.
 
 **Future Improvements:**  
 Adaptive blur based on detail, paper texture overlays, and content-aware enhancement (portrait vs. scenery) could improve balance and realism.
@@ -163,7 +163,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 The Word Art filter transforms an image into typographic artwork by replacing pixels with words whose sizes are dynamically mapped to local brightness. The input image is first validated and converted to grayscale to extract luminance. It is then resized for better performance. A large white canvas is created, and the user’s input phrase is split into words. These words are sequentially drawn across the canvas, mapped to every alternate pixel. Font sizes are determined using an interpolation function, where darker pixels yield larger fonts. The result is a text-based rendering that visually represents tonal gradients using size and spacing, forming an image entirely from words.
 
 **Development Iterations:**  
-Early versions used random numbers generated instead of words. Switching to words abd phrases improved narrative and personaled the result. Font size scaling and spacing were refined to maintain balance. 
+Early versions used random numbers generated instead of words. Switching to words and phrases improved narrative and personaled the result. Font size scaling and spacing were refined to maintain balance. 
 
 **Evaluation:**  
 Performs well on portraits or icons with strong shapes. Struggles on busy or low-contrast scenes. Long phrases lead to layout clutter and repetition artifacts.
@@ -180,6 +180,7 @@ Support for boldness simulation (i.e varying text weight according to the bright
 ### Pointillism
 <img src="images/Georges_Seurat_Sunflowers_Pointilism.jpg" alt="Pointillism" width="300" height="300"/>
 <p>Figure: “Sunflowers” by Georges Seurat, a pioneering French Post-Impressionist painter [7]</p>
+
 **Implementation:**  
 The Pointillism filter emulates Pointillist technique of reconstructing an image through distinct colored dots. The image is first resized to 300×300 for efficiency. KMeans clustering is applied to reduce the color space to 16 dominant tones, capturing the visual essence with a simplified palette.
 A white canvas is initialized, and then a regular grid is used to iterate over the clustered image. At each step, a small circular dot (radius 2) is stamped onto the canvas using the corresponding color from the clustered result. This builds a mosaic of tightly spaced dots that mimic brush dabs in traditional pointillism. Finally, the dotted image is resized back to the original dimensions for display.
