@@ -149,7 +149,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 
 ### Word Art
 <img src="images/Wordart.png" alt="Word" width="300" height="300"/>
-
+ <p> Figure: Word Art Self Portrait by Mariel Labrecque </p>
 
 **Implementation:**  
 The Word Art filter transforms an image into typographic artwork by replacing pixels with words whose sizes are dynamically mapped to local brightness. The input image is first validated and converted to grayscale to extract luminance. It is then resized for better performance and readability. A large white canvas is created, and the user’s input phrase is split into words. These words are sequentially drawn across the canvas, mapped to every alternate pixel. Font sizes are determined using an interpolation function, where darker pixels yield larger fonts. The result is a text-based rendering that visually represents tonal gradients using size and spacing, forming an image entirely from words.
@@ -241,7 +241,7 @@ This project was completed independently. I was responsible for the entire desig
 - Raja Ravi Varma – “Woman Holding a Fruit Plate” - https://artsandculture.google.com/asset/madri-or-the-maharashtrian-lady-with-fruit-raja-ravi-varma/sQHU63D0VK3xpA?hl=en
 - Georges Seurat – “Sunflowers” - https://www.facebook.com/photo.php?fbid=851107430386079&id=100064604895753&set=a.542901797873312
 - Andy Warhol – “Marilyn Diptych” - https://www.mutualart.com/Artwork/Marilyn-Monroe/87E25A09F4753D4DCE943BD73945BAB2
-- Word Art
+- Mariel Labrecque - Self Portrait Word Art - https://laconteconsulting.com/2018/10/19/what-i-learned-from-word-art/
 
 Used under public domain or for academic reference only.
 
