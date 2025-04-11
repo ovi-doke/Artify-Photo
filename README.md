@@ -148,7 +148,7 @@ Edge-aware smoothing and region-adaptive clustering could retain more detail in 
 ---
 
 ### Word Art
-<img src="images/word_art.jpg" alt="Word" width="300" height="300"/>
+<img src="images/Wordart.png" alt="Word" width="300" height="300"/>
 
 
 **Implementation:**  
