@@ -23,7 +23,7 @@ The interface dynamically adapts to the selected filter, showing relevant inputs
 ---
 
 ## How to Run
-1. Open the Colab notebook [Insert Your Colab Link Here].
+1. Open the Colab notebook [Open in Google Colab](https://colab.research.google.com/drive/1E4MsvuOEOJmaKKoxYC5D_HYIRnglTGbb?authuser=2#scrollTo=dWwLQSQcsAAE).
 2. Run all cells (**Runtime > Run all**).
 3. Choose an image (upload or default).
 4. Select a filter from the dropdown.
