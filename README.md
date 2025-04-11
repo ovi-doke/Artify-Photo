@@ -72,7 +72,7 @@ Strong lighting and clear edges give the best results. Low-contrast or underexpo
 Adaptive thresholding for highlight masking, watercolor-bleed textures, and region-specific saturation control could yield better results.
 
 
-<img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="600" height="300"/>
+<img src="images/Marilyn_Monroe_Watercolour.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -92,7 +92,7 @@ Works well on close-up portraits with strong contrast. Cluttered or dark backgro
 Adaptive blur based on detail, paper texture overlays, and content-aware enhancement (portrait vs. scenery) could improve balance and realism.
 
 
-<img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_CharcoalSketch.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -112,7 +112,7 @@ Ideal for well-lit, cleanly composed portraits. Less effective for low-contrast 
 Mean Shift clustering could improve segmentation in complex scenes, and advanced edge detectors may offer better consistency across varied lighting.
 
 
-<img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Pop.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -132,7 +132,7 @@ Performs best on portraits or compositions with strong lighting and color contra
 Edge-aware smoothing and region-adaptive clustering could retain more detail in complex zones. Adding brush textures would also enhance authenticity.
 
 
-<img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Oil_Paint.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -153,7 +153,7 @@ Performs well on portraits or icons with strong shapes. Struggles on busy or low
 Support for boldness simulation and smarter text wrapping would improve flexibility. Limiting phrase length or auto-summarizing content could help maintain clarity in dense regions.
 
 
-<img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_WordArt.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -173,7 +173,7 @@ Great for colorful or high-contrast images. Loses detail in portraits or low-con
 Adaptive dot sizing—small in detailed areas, large in flat regions—could enhance image fidelity while preserving the stylized effect.
 
 
-<img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_Pointillism.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
 
@@ -194,6 +194,6 @@ Performs best on single-subject portraits or objects with plain backgrounds. Str
 Preprocessing to isolate subjects could improve performance on complex backgrounds. More color map variety or dynamic palette selection could expand creative range.
 
 
-<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="300" height="300"/>
+<img src="images/Marilyn_Monroe_AndyWarholFilter.jpg" alt="Watercolour" width="1200" height="600"/>
 
 ---
